@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Jogo da Velha</h1>
+    </header>
+
+    <main id="main">
+
+    <button onclick="clickStart()" id="btn">Start</button>
+    <div id="endGame"></div>
+    <button id="restart" onclick="clickRestart()" >
+    
+        Restart</button>
+   
+    <div id="tabuleiro" >
+        <div class="square" id="1"></div>
+        <div class="square"id="2"></div>
+        <div class="square"id="3"></div>
+        <div class="square"id="4"></div>
+        <div class="square" id="5"></div>
+        <div class="square" id="6"></div>
+        <div class="square" id="7"></div>
+        <div class="square" id="8"></div>
+        <div class="square" id="9"></div>
+    </div>
+    
+    </main>
+
+
+    <footer>
+
+    </footer>
+   <script src="interface.js"></script>
+   <script src="game.js"></script>
+</body>
+</html>

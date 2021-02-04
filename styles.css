@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+body{
+    background-color: #fff47c;
+    color: #272624;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+}
+header{
+display: grid;
+padding: 50px;
+justify-items: center;
+text-align: justify;
+font-size: 1.5rem;
+}
+main{
+    display: grid;
+    justify-items: center;
+    padding-top: 130px;
+}
+button{
+    width: 150px;
+    height: 50px;
+    font-family: 'Raleway', sans-serif;
+    border: #272624 solid 2px;
+    border-radius: 20px;
+    background-color: #fff47c;
+    font-size: 1.5rem;
+    transition-duration: 300ms;
+}
+button:hover{
+    font-size: 1.8rem;
+    width: 160px;
+    height: 60px;
+    background-color: #272624;
+    color: #fff47c;
+    cursor: pointer;
+}
+button:focus{ 
+    border: #272624 solid 2px;
+    border-radius: 20px;
+    outline: none;
+}
+#restart{
+    visibility: hidden;
+}
+@keyframes showTab{
+    from{
+        width: 0px;
+        height: 0px;
+    }
+    to{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+#tabuleiro{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    width: 500px;
+    height: 500px;
+    gap: 10px;
+    background-color: #272624;
+    animation-name: showTab;
+    animation-duration: 2.2s;
+    visibility: hidden;
+}
+.square{
+    display: grid;
+    font-size: 80px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff47c;
+}
+#endGame{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: #272624;
+    color: #fff47c;
+    font-size: 4rem;
+}
+#endmsg{
+    font-size: 8rem;
+}
+p{
+    margin: 0px;
+}
+

@@ -1,18 +1,19 @@
 function clickStart() {
   document.getElementById("btn").style.transitionDuration = "0s";
   document.getElementById("btn").style.visibility = "hidden";
+  document.getElementById("restart").style.visibility = "visible";
   document.getElementById("btn").style.height = "0px";
   document.getElementById("main").style.paddingTop = "0px";
   showTable();
 }
 function showTable() {
   document.getElementById("tabuleiro").style.visibility = "visible";
-  tabuleiro.style.height = "500px";
+  tabuleiro.style.height = "400px";
   restoreTable();
 }
 var array = [];
 
-document.getElementById("restart").style.height = "0px";
+//document.getElementById("restart").style.height = "0px";
 
 let squares = document.querySelectorAll(".square");
 document.addEventListener("DOMContentLoaded", () => {
@@ -98,8 +99,8 @@ function endgame() {
     endMsg.innerHTML += "<p>venceu!</p>";
     document.getElementById("restart").style.height = "50px";
     document.getElementById("restart").style.visibility = "visible";
-    document.getElementById("restart").style.marginTop = "20px";
-  }, 2500);
+  //document.getElementById("restart").style.marginTop = "20px";
+   }, 2500);
 }
 function clickRestart() {
   endgameStatus = false;
@@ -108,14 +109,14 @@ function clickRestart() {
   resetPlayerTime();
 
   collapseEndMsg();
-  collapseRestartBtn();
+  //collapseRestartBtn();
   showTable();
 }
-function collapseRestartBtn() {
-  document.getElementById("restart").style.height = "0px";
-  document.getElementById("restart").style.visibility = "hidden";
-  document.getElementById("restart").style.marginTop = "0px";
-}
+// function collapseRestartBtn() {
+//   document.getElementById("restart").style.height = "0px";
+//   document.getElementById("restart").style.visibility = "hidden";
+//   document.getElementById("restart").style.marginTop = "0px";
+// }
 function collapseEndMsg() {
   let endMsg = document.getElementById("endGame");
   endMsg.style.height = "0px";
